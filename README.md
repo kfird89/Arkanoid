@@ -21,7 +21,7 @@ Arkanoid provides an interactive gaming experience where the player controls a p
 Create a bin directory and compile the Java source files:
 ```bash
    mkdir bin
-   javac -d bin src/*.java
+   javac -cp ".;biuoop-1.4.jar" -d bin (Get-ChildItem -Path .\src -Filter *.java -Recurse).FullName
 ```
 Run the game by:
 ```bash
